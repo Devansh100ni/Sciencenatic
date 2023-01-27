@@ -3,17 +3,23 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Home from "./components/Home";
-import './styles/App.scss'
+import Services from "./components/Services";
+import "./styles/App.scss";
+import './styles/mediaquery.scss';
+
+
+
 function App() {
   return (
     <div>
       <BrowserRouter>
-          <Header/>
-        <Routes> 
-          <Route index element={<Home/>} />
-          <Route path="/contact" element={<Contact/>}/>
+        <Header />
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/services" element={<Services />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </BrowserRouter>
     </div>
   );

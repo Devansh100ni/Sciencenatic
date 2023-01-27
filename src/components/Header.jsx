@@ -15,7 +15,7 @@ const Header = () => {
             <HashLink to={"/#about"}>About</HashLink> 
             {/* this "#About" is due to a div which is given to a div whose "id=About" so on click the page will sroll to it */}
             <HashLink to={"/#links"}>Links</HashLink>
-            <HashLink to={"/#services"}>Services</HashLink>
+            <HashLink to={"/services"}>Services</HashLink>
           </main>
         </nav>
       </div> 
