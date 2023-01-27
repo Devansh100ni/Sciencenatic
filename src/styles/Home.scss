@@ -1,0 +1,180 @@
+@import "./color.scss";
+.home {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+
+  > main {
+    position: absolute;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 0rem 1rem 0rem;
+    justify-content: center;
+    background-color: black;
+    h1 {
+      margin-right: 14px;
+      font: 400 5rem cursive;
+      color: $first;
+    }
+    p {
+      margin-right: 14px;
+      font: 900 1rem cursive;
+      color: $first;
+    }
+  }
+
+  main::before {
+    content: "";
+    width: 169%;
+    height: 100%;
+    position: absolute;
+    background: no-repeat center/auto url("../assets/2.png");
+    filter: opacity(50%);
+    top: 0;
+  }
+}
+.home2 {
+  width: 100%;
+  height: 100vh;
+  background-color: $black;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -130px;
+
+  > img {
+    width: 30%;
+    animation: imgUp 1s linear infinite alternate;
+    border-radius: 300px;
+  }
+  > div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    height: 100vh;
+    > p {
+      color: $first;
+      letter-spacing: 2px;
+      word-spacing: 5px;
+      font: 100 1.2rem $text1;
+    }
+  }
+}
+
+@keyframes imgUp {
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+.home3 {
+  width: 100%;
+  height: 100vh;
+  background-color: $black;
+  display: flex;
+  margin-top: -130px;
+  padding-bottom: 100px;
+
+  > div {
+    width: 70%;
+    height: 90vh;
+    background-color: $first;
+    border-radius: 0 200px 200px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    > h1 {
+      text-transform: uppercase;
+      border-bottom: 2px solid $dark;
+      padding: 0.5rem;
+      width: 15rem;
+      color: $dark;
+      font: $text3;
+      animation: h1text 1s linear infinite alternate;
+    }
+    > p {
+      padding: 3rem;
+      letter-spacing: 1px;
+      word-spacing: 5px;
+      line-height: 130%;
+      font: italic 100 0.9rem cursive;
+    }
+  }
+}
+
+@keyframes h1text {
+  to {
+    transform: translateX(-2px);
+  }
+}
+
+.home4 {
+    width: 100%;
+    height: 100vh;
+    background-color: $black;
+    justify-content: flex-end;
+    display: flex;
+    >div{
+      
+        background-color: $dark;
+        border-radius: 200px 0 0 200px;
+        width: 70%;
+        height: 70vh;
+        display: flex;
+        padding: 2rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        >h1{
+            color: $first;
+            text-transform: uppercase;
+            width: 140px;
+            border-bottom: 2px solid $first;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        >article{
+            display: flex;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            >div{
+              animation: imgUp 0.7s linear infinite alternate;
+                margin: 1rem;
+                height: 10rem;
+                width: 10rem;
+                background-color: $first;
+                border-radius: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.5s;
+                cursor:pointer;
+                &:hover{
+                    filter: invert(1);
+                }
+                a{
+                  color: $dark;
+                }
+                svg{
+                    font-size: 4rem;
+                }
+                p{
+                  font: 900 1.2rem $text2;
+                }
+            }
+        }
+    }
+}
