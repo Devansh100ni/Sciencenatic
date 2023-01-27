@@ -9,5 +9,28 @@
             }
         }
     }
-    
+    .home2{
+        margin-top: -350px;
+        padding: 0;
+        >img{
+            margin-left: 40px;
+        }
+
+    }
+    .contact{
+        >main{
+            >form{
+                margin: 3rem;
+            }
+        }
+    }
+    .contact::before {
+        content: "";
+        width: 53%;
+        height: 118%;
+        position: absolute;
+        background: no-repeat center/auto url("../assets/1.png");
+        filter: opacity(100%);
+        top: 0;
+      }
 }

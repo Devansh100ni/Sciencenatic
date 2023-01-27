@@ -46,7 +46,7 @@
   align-items: center;
   justify-content: center;
   margin-top: -130px;
-
+  
   > img {
     width: 30%;
     animation: imgUp 1s linear infinite alternate;
@@ -61,6 +61,7 @@
     padding: 5rem;
     height: 100vh;
     > p {
+      text-align: center;
       color: $first;
       letter-spacing: 2px;
       word-spacing: 5px;
